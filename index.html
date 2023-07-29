@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+</head>
+<style>
+  h1{
+    padding: 20px;
+  }
+body{
+  text-align: center;
+  background-color:cadetblue;
+}
+input{
+  height:30px;
+  width: 300px;
+  border-radius: 8px;
+}
+label{
+      display: inline-block;
+      width: 300px;
+      font-size: 25px;
+      
+    }
+    button{
+      margin-left: 125px;
+      height: 40px;
+      width: 250px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+</style>
+<body>
+  <div>
+    <h1>Student Registration Form</h1>
+    <form id="student" action="connect.jsp" method="post">
+      <label id="sname">Student Name</label>
+      <input name="sname" type="text" placeholder="Name" />
+    </br></br>
+    <label id="email">Email</label>
+    <input name="email" type="email" placeholder="email"/>
+   </br></br>
+    <label id="RegisterNo">Register No</label>
+    <input name="RegisterNo" type="text" placeholder="RegisterNo"/>
+    </br></br>
+    <label id="dob">DOB</label>
+    <input name="dob" type="date" placeholder="DOB"/>
+    </br></br>
+    <label id="dept">Department</label>
+    <input name="dept" type="text" placeholder="Department"/>
+    </br></br>
+    <label id="gender">Gender</label>
+    <input  name="gender" type="text"  placeholder="gender"> 
+    </br></br>
+    <label id="age">Age</label>
+    <input name="age" type="text" placeholder="age"/> 
+    </br></br>
+    <label id="sem">Semester</label>
+    <input name="sem" type="text" placeholder="Semester"/>
+    </br></br>
+    <label id="cgpa">CGPA</label>
+    <input name="cgpa" type="text" placeholder="CGPA"/>
+    </br></br>
+    <button type="submit">Submit</button>
+
+     
+    </form>
+    <form id="db" action="fetch.jsp">
+      <button type="submit">Database</button>
+    </form>
+  </div>
+</body>
+</html>
